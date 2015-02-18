@@ -1,0 +1,17 @@
+
+<div>Klatch</div>
+</div>
+<br>
+<div>
+	<%= form_for @user do |f| %>
+		First Name: <%= f.text_field :first_name %><br>
+		Last Name: <%= f.text_field :last_name %><br>
+		Username: <%= f.text_field :username %><br>
+		Email: <%= f.text_field :email %><br>
+		Password: <%= f.password_field :password %><br>
+		Confirm Password: <%= f.password_field :password_confirmation %><br><br>
+		Add Avatar: <%= f.file_field :avatar %>
+		<br><br>
+		<%= f.submit %>
+	<% end %>
+</div>

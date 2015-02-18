@@ -1,0 +1,21 @@
+<div class='newRoom'>
+
+	<div class='mainHeader'>
+		Create a Room
+	</div>
+
+	<%= form_for @room do |r| %>
+		Topic: <%= r.text_field :topic %><br>
+		<br>
+		Headline: <%= r.text_area :headline %><br>
+		<br>
+		Add Image: <%= r.file_field :avatar %><br>
+		<br>
+		<%= r.submit "Submit" %>
+	<% end %>
+
+	<br><br>
+
+	<%= link_to 'Back to Rooms', rooms_path %>
+
+</div>

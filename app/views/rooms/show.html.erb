@@ -1,0 +1,12 @@
+<div class='mainHeader'>
+	<%= @room.topic %>
+</div>
+<div class='postDate'>
+	<%= @room.created_at.strftime("Created on %A at %l:%M%P") %>
+</div>
+<hr>
+<p class='headline'>
+	<%= @room.headline %>
+</p>
+
+<%= link_to 'Back to Rooms', rooms_path %>
