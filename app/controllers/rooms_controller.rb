@@ -9,7 +9,7 @@ class RoomsController < ApplicationController
   end
 
   def create
-    room = Room.create(params.require(:room).permit(:topic, :headline, :avatar))
+    room = Room.create(params.require(:room).permit(:topic, :headline, :photo))
     if room.save
       redirect_to rooms_path
     end

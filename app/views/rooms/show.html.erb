@@ -4,6 +4,9 @@
 <div class='postDate'>
 	<%= @room.created_at.strftime("Created on %A at %l:%M%P") %>
 </div>
+<div class='roomImageContainer'>
+	<img><%= link_to(image_tag(@room.photo.url(:medium)), @room) %></img>
+</div>
 <hr>
 <p class='headline'>
 	<%= @room.headline %>
