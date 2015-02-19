@@ -18,15 +18,25 @@ body{
 	margin: 0 auto;
 }
 
+.main{
+	margin: 15px;
+}
+
 #navBar{
 	background-color: black;
 	padding: 15px;
+	font-size: 20px;
 }
 
-#logo{
+#icon{
 	color: white;
 	display: inline;
 	width: 150px;
+}
+
+#icon img{
+	height: 20px;
+	vertical-align: bottom;
 }
 
 #logSign{
@@ -34,5 +44,5 @@ body{
 	text-align: right;
 	display: inline;
 	float: right;
-	width: 150px;
+	width: 350px;
 }

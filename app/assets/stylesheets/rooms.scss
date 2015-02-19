@@ -22,25 +22,25 @@ hr {
 }
 
 /* unvisited link */
-a:link {
+a:link{
   color: #1b94fe;
   text-decoration: none;
 }
 
 /* visited link */
-a:visited {
+a:visited{
   color: #1b94fe;
   text-decoration: none;
 }
 
 /* mouse over link */
-a:hover {
+a:hover{
   color: #80c3fe;
   text-decoration: none;
 }
 
 /* selected link */
-a:active {
+a:active{
   color: #80c3fe;
   text-decoration: none;
 }
@@ -64,16 +64,6 @@ a:active {
 	vertical-align:top;
   display:inline-block;
   overflow: hidden;
-}
-
-.mainHeader{
-	font-size: 40px;
-	padding: 15px;
-}
-
-.subHeader{
-	font-size: 20px;
-	padding: 15px;
 }
 
 .topic{

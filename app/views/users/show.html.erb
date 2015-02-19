@@ -1,12 +1,13 @@
-<div class='mainHeader'>
-	<%= @user.username %>
-</div>
-<div>
-	<%= @user.first_name %> <%= @user.last_name %>
-</div>
-<div>
-	<%= image_tag @user.avatar.url(:medium) %>
+
+<%= link_to '<-- Back to Users', users_path %>
+
+<div class='profile'>
+	<div class='userHeader'>
+		<%= @user.username %>
+	</div>
+	<br>
+	<img>
+		<%= image_tag @user.avatar.url(:medium) %>
+	</img>
 </div>
 <hr>
-
-<%= link_to 'Back to Users', users_path %>

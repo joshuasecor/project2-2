@@ -1,6 +1,4 @@
 
-
-
 <%= form_for @user, url:{controller: "sessions", action: "create"} do |f| %>
   Email: <%= f.text_field :email %><br />
   Password: <%= f.password_field :password %><br />
