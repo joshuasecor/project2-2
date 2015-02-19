@@ -11,7 +11,9 @@ class UsersController < ApplicationController
 	def create
 		user = User.new(params.require(:user).permit(:first_name, :last_name, :username, :email, :password, :password_confirmation, :avatar))
 		if user.save
-			redirect_to users_path
+			redirect_to rooms_path
+		else
+      redirect_to new_user_path
 		end
 	end
 

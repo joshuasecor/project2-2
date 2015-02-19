@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+
+body{
+	margin: 0 auto;
+}
+
+#navBar{
+	background-color: black;
+	padding: 15px;
+}
+
+#logo{
+	color: white;
+	display: inline;
+	width: 150px;
+}
+
+#logSign{
+	color: white;
+	text-align: right;
+	display: inline;
+	float: right;
+	width: 150px;
+}

@@ -1,5 +1,4 @@
 
-<div>Klatch</div>
 </div>
 <br>
 <div>
@@ -12,6 +11,8 @@
 		Confirm Password: <%= f.password_field :password_confirmation %><br><br>
 		Add Avatar: <%= f.file_field :avatar %>
 		<br><br>
-		<%= f.submit %>
+		<%= f.submit "Submit" %>
 	<% end %>
 </div>
+<br>
+<%= link_to 'Cancel', users_path %>

@@ -6,16 +6,43 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body{
-	// background-image: url("http://sokobano.de/wiki/images/JSoko-background_dynamically_painted.jpg");
-	background-size: cover;
-}
+// body{
+// 	background-image: url("3840x2400.jpg");
+// 	background-repeat: no-repeat;
+//   background-attachment: local;
+//   background-size: cover;
+//   background-position: center;
+// }
 
 hr {
   border: none;
   background-color: #ccc;
   color: #ccc;
   height: 1px;
+}
+
+/* unvisited link */
+a:link {
+  color: #1b94fe;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #1b94fe;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #80c3fe;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: #80c3fe;
+  text-decoration: none;
 }
 
 #allRooms{
@@ -41,6 +68,11 @@ hr {
 
 .mainHeader{
 	font-size: 40px;
+	padding: 15px;
+}
+
+.subHeader{
+	font-size: 20px;
 	padding: 15px;
 }
 
