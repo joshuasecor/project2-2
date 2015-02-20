@@ -12,5 +12,16 @@
 <p class='headline'>
 	<%= @room.headline %>
 </p>
+<hr>
+
+	<% @room.comments.each do |r| %>
+		<%= r.comment_text %><br>
+	<% end %>
+
+<br><br>
+
+<%= link_to "Add Comment", new_room_comment_path(@room) %>
+
+<br><br>
 
 <%= link_to 'Back to Rooms', rooms_path %>

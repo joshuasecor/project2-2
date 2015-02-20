@@ -10,10 +10,10 @@ class RoomsController < ApplicationController
 
   def create
     room = Room.create(params.require(:room).permit(:topic, :headline, :photo))
-    if current_user != nil && post.save
-      redirect_to posts_path(user_id: current_user.id )
-    else
-      redirect_to new_post_path
+    if room.save
+      redirect_to rooms_path
+    # else
+    #   redirect_to new_post_path
     end
   end
 
