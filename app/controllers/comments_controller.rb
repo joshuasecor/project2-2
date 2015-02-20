@@ -13,7 +13,7 @@ class CommentsController < ApplicationController
   	@comment.room = get_room
 
   	if @comment.save
-      redirect_to rooms_path
+      redirect_to @room
     end
   end
 

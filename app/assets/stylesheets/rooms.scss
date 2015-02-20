@@ -6,43 +6,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// body{
-// 	background-image: url("3840x2400.jpg");
-// 	background-repeat: no-repeat;
-//   background-attachment: local;
-//   background-size: cover;
-//   background-position: center;
-// }
-
 hr {
   border: none;
   background-color: #ccc;
   color: #ccc;
   height: 1px;
-}
-
-/* unvisited link */
-a:link{
-  color: #1b94fe;
-  text-decoration: none;
-}
-
-/* visited link */
-a:visited{
-  color: #1b94fe;
-  text-decoration: none;
-}
-
-/* mouse over link */
-a:hover{
-  color: #80c3fe;
-  text-decoration: none;
-}
-
-/* selected link */
-a:active{
-  color: #80c3fe;
-  text-decoration: none;
 }
 
 #allRooms{
@@ -109,5 +77,7 @@ a:active{
 }
 
 .oneComment{
-	border: solid black 2px;
+	border: solid black 1px;
+	margin: 10px;
+	padding: 10px;
 }

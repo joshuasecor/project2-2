@@ -1,16 +1,31 @@
 
-<div>
+<div class="grad"></div>
+
+<div class='login'>
+	<div class="header">
+		<div>one<span>2</span>many</div>
+	</div>
 	<%= form_for @user do |f| %>
-		First Name: <%= f.text_field :first_name %><br>
-		Last Name: <%= f.text_field :last_name %><br>
-		Username: <%= f.text_field :username %><br>
-		Email: <%= f.text_field :email %><br>
-		Password: <%= f.password_field :password %><br>
-		Confirm Password: <%= f.password_field :password_confirmation %><br><br>
-		Add Avatar: <%= f.file_field :avatar %>
-		<br><br>
-		<%= f.submit "Submit" %>
-	<% end %>
+		<%= f.text_field :username, placeholder: "username", class: 'loginText', autofocus: true %><br>
+		<%= f.password_field :password, placeholder: "password", class: 'loginText' %><br>
+		<%= f.password_field :password_confirmation, placeholder: "confirm password", class: 'loginText' %><br>
+		<div class='avatarButton'>avatar <%= f.file_field :avatar %></div>
+		<%= f.submit "Signup", class: 'loginButton' %>
+	<% end %><br>
+
+	<%= link_to 'Cancel', rooms_path, class: 'cancelButton' %>
 </div>
-<br>
-<%= link_to 'Cancel', users_path %>
+
+
+
+<!-- <div class="body"></div>
+	<div class="grad"></div>
+	<div class="header">
+		<div>one<span>2</span>many</div>
+	</div>
+	<br>
+	<div class="login">
+			<input type="text" placeholder="username" name="user"><br>
+			<input type="password" placeholder="password" name="password"><br>
+			<input type="button" value="Login">
+	</div> -->

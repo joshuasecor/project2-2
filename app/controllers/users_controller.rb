@@ -9,12 +9,13 @@ class UsersController < ApplicationController
 	end
 
 	def create
-		user = User.new(params.require(:user).permit(:first_name, :last_name, :username, :email, :password, :password_confirmation, :avatar))
+		user = User.new(params.require(:user).permit(:username, :password, :password_confirmation, :avatar))
 		if user.save
 			redirect_to rooms_path
 			session["user_id"] = user.id
-		else
-      redirect_to new_user_path
+
+		# else
+  #     redirect_to new_user_path
 		end
 	end
 

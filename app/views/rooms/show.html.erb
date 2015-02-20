@@ -13,10 +13,14 @@
 	<%= @room.headline %>
 </p>
 <hr>
-
+<div class="allComments">
+	<div id=""
 	<% @room.comments.each do |r| %>
-		<%= r.comment_text %><br>
+		<div class="oneComment">
+			<%= r.comment_text %>
+		</div>
 	<% end %>
+</div>
 
 <br><br>
 

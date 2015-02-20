@@ -9,11 +9,12 @@ class RoomsController < ApplicationController
   end
 
   def create
-    room = Room.create(params.require(:room).permit(:topic, :headline, :photo))
+    room = Room.create(room_params)
+    @room = Room.last
     if room.save
-      redirect_to rooms_path
-    # else
-    #   redirect_to new_post_path
+      redirect_to @room
+    else
+      redirect_to new_post_path
     end
   end
 
@@ -27,4 +28,10 @@ class RoomsController < ApplicationController
   def destroy
   end
   
+  private
+
+  def room_params
+    params.require(:room).permit(:topic, :headline, :photo)
+  end
+
 end
