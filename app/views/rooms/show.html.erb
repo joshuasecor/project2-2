@@ -1,21 +1,17 @@
 
-<div class='mainHeader'>
+<div class='topic'>
 	<%= @room.topic %>
 </div>
 <div class='postDate'>
 	<%= @room.created_at.strftime("Created on %A at %l:%M%P") %>
 </div>
-<div class='roomImageContainer'>
-	<img><%= link_to(image_tag(@room.photo.url(:medium)), @room) %></img>
-</div>
-<hr>
 <p class='headline'>
 	<%= @room.headline %>
 </p>
 <hr>
 <div class="allComments">
 	<div id=""
-	<% @room.comments.each do |r| %>
+	<% @room.comments.order('created_at DESC').each do |r| %>
 		<div class="oneComment">
 			<%= r.comment_text %>
 		</div>
@@ -29,3 +25,4 @@
 <br><br>
 
 <%= link_to 'Back to Rooms', rooms_path %>
+

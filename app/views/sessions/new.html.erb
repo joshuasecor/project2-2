@@ -1,6 +1,15 @@
 
-<%= form_for @user, url:{controller: "sessions", action: "create"} do |f| %>
-  Username: <%= f.text_field :username %><br />
-  Password: <%= f.password_field :password %><br />
-  <%= f.submit "Login" %>
-<% end %>
+
+<div class='login'>
+	<div class="header">
+		<div>one<span>2</span>many</div>
+	</div>
+	<%= form_for @user, url:{controller: "sessions", action: "create"} do |f| %>
+		<%= f.text_field :username, placeholder: "username", class: 'loginText', autofocus: true %><br>
+		<%= f.password_field :password, placeholder: "password", class: 'loginText' %><br>
+		<%= f.submit "Login", class: 'loginButton' %>
+	<% end %><br>
+
+	<%= link_to 'Cancel', rooms_path, class: 'cancelButton' %>
+</div>
+
