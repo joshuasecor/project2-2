@@ -5,12 +5,9 @@
 		<div class='oneRoom' >
 			<div class='topic'><%= link_to r.topic, r %></div>
 			<div class='postDate'><%= r.created_at.strftime("Created on %A at %l:%M%P") %></div>
-			<br>
 			<div class='roomImageContainer'>
 				<img><%= link_to(image_tag(r.photo.url(:medium)), r) %></img>
 			</div>
-			<hr>
-			<div class='headline'><%= r.headline %></div>
 		</div>
 	<% end %>
 </div>

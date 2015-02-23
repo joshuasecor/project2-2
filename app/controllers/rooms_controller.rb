@@ -26,12 +26,18 @@ class RoomsController < ApplicationController
   end
 
   def destroy
+    Room.find(params[:id]).destroy
+    redirect_to rooms_path
   end
   
   private
 
+  def get_room
+    @room = Room.where(id: params[:room_id]).first
+  end
+
   def room_params
-    params.require(:room).permit(:topic, :headline, :photo)
+    params.require(:room).permit(:topic, :headline, :photo, :room_text, :soundcloud)
   end
 
 end

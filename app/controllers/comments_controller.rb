@@ -11,6 +11,7 @@ class CommentsController < ApplicationController
   def create
   	@comment = Comment.create(comment_params)
   	@comment.room = get_room
+    @comment.user = current_user
 
   	if @comment.save
       redirect_to @room
