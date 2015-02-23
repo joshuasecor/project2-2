@@ -8,8 +8,9 @@
 		<%= f.text_field :username, placeholder: "username", class: 'loginText', autofocus: true %><br>
 		<%= f.password_field :password, placeholder: "password", class: 'loginText' %><br>
 		<%= f.submit "Login", class: 'loginButton' %>
-	<% end %><br>
-
-	<%= link_to 'Cancel', rooms_path, class: 'cancelButton' %>
+	<% end %>
+	<div class='signupLink'>
+		Not a user? <%= link_to "Signup", new_user_path %>
+	</div>
 </div>
 

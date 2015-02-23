@@ -13,6 +13,28 @@ hr {
   height: 1px;
 }
 
+#icon2{
+	font-size: 90px;
+	color: white;
+	text-align: center;
+}
+
+#icon2 span{
+	color: #51ff00 !important;
+}
+
+#subIcon{
+	font-size: 32px;
+	color: white;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+#subIcon span{
+	color: #51ff00 !important;
+}
+
+
 #allRooms{
 	width: 90%;
 	max-width: 700px;
@@ -22,8 +44,8 @@ hr {
 }
 
 .oneRoom{
-	width: 375px;
-	background-color: #f2f2f2;
+	width: 350px;
+	background: linear-gradient(white, #b5d4e3);
 	margin: 8px;
 	padding: 15px;
 	border: solid black 1px;
@@ -83,7 +105,7 @@ hr {
 }
 
 .roomImageContainer2{
-	width: 400px;
+	width: 80%;
 	margin: 0 auto;
 	overflow: hidden;
 	margin-bottom: 15px;
@@ -142,4 +164,9 @@ hr {
 
 .deleteLink{
 	text-align: right;
+}
+
+.box{
+	height: 100px;
+	width: 100px;
 }

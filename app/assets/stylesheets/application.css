@@ -30,25 +30,25 @@ body{
 
 /* unvisited link */
 a:link{
-  color: rgba(0, 132, 255, 1);
+  color: rgba(0, 74, 235, 1);
   text-decoration: none;
 }
 
 /* visited link */
 a:visited{
-  color: rgba(0, 132, 255, 1);
+  color: rgba(0, 74, 235, 1);
   text-decoration: none;
 }
 
 /* mouse over link */
 a:hover{
-  color: rgba(0, 132, 255, 0.8);
+  color: rgba(0, 74, 235, 0.6);
   text-decoration: none;
 }
 
 /* selected link */
 a:active{
-  color: rgba(0, 132, 255, 0.8);
+  color: rgba(0, 74, 235, 0.6);
   text-decoration: none;
 }
 
@@ -57,7 +57,7 @@ a:active{
 }
 
 #navBar{
-	background-color: black;
+	background-color: #121212;
 	padding: 15px;
 	font-size: 20px;
 	z-index: -1;

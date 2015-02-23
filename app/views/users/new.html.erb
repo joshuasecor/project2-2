@@ -9,7 +9,8 @@
 		<%= f.password_field :password_confirmation, placeholder: "confirm password", class: 'loginText' %><br>
 		<div class='avatarButton'>avatar <%= f.file_field :avatar %></div>
 		<%= f.submit "Signup", class: 'loginButton' %>
-	<% end %><br>
-
-	<%= link_to 'Cancel', rooms_path, class: 'cancelButton' %>
+	<% end %>
+	<div class='signupLink'>
+		Already a user? <%= link_to "Login", new_session_path %>
+	</div>
 </div>
