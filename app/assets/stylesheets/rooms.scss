@@ -17,6 +17,7 @@ hr {
 	font-size: 90px;
 	color: white;
 	text-align: center;
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
 }
 
 #icon2 span{
@@ -25,9 +26,10 @@ hr {
 
 #subIcon{
 	font-size: 32px;
-	color: white;
+	color: #f0f0f0;
 	text-align: center;
 	margin-bottom: 25px;
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
 }
 
 #subIcon span{
@@ -52,11 +54,15 @@ hr {
 	border-radius: 8px;
   display: inline-block;
   overflow: hidden;
+  -webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
 }
 
 .postArea{
 	width: 85%;
 	max-width: 600px;
+	height: auto;
 	margin: 0 auto;
 	border: 1px solid black;
 	border-radius: 5px;
@@ -133,24 +139,24 @@ hr {
 .oneComment{
 	margin: 10px;
 	padding: 10px;
+	display: block;
 }
 
 .avatarImage{
 	height: 30px;
 	width: 30px;
-	overflow: hidden;
 	margin-right: 10px;
 	float: left;
 }
 
 .avatarImage img{
 	height: 100%;
+	border-radius: 4px;
 }
 
 .avatarComment{
 	text-align: left;
-	float: left;
-	margin-top: 4px;
+	margin-top: 6px;
 }
 
 .roomLinks{

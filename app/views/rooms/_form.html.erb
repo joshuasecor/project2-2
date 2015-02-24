@@ -1,0 +1,11 @@
+<%= form_for @room do |r| %>
+	Topic: <%= r.text_field :topic %><br>
+	<br>
+	Text: <%= r.text_area :room_text %><br>
+	<br>
+	Soundcloud Link: <%= r.text_field :soundcloud %><br>
+	<br>
+	Add Image: <%= r.file_field :photo %><br>
+	<br>
+	<%= r.submit "Submit" %>
+<% end %>

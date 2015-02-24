@@ -11,13 +11,11 @@
 </head>
 
 <body>
-
+	<div id='line'></div>
 	<div id='navBar'>
-
 		<div id='icon'>
 			one<span>2</span>many 
 		</div>
-
 		<div id='logSign'>
 			<% if current_user != nil %>
 			<%= link_to(image_tag(current_user.avatar.url(:thumb)), user_path(current_user)) %> <%= link_to(current_user.username, user_path(current_user)) %> /
@@ -31,10 +29,12 @@
 			<% end %>
 		</div>
 	</div>
-	<br>
+	<div id='line'></div>
 
-	<div class='main'>
-		<%= yield %>
+	<div class='body'>
+		<br><br>
+			<%= yield %>
+		<br><br>
 	</div>
 
 </body>

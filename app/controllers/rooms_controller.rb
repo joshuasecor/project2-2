@@ -22,7 +22,14 @@ class RoomsController < ApplicationController
     @room = Room.find(params[:id])
   end
 
+  def edit
+    @room = Room.find(params[:id])
+  end
+
   def update
+    @room = Room.find(params[:id])
+    @room.update_attributes(room_params)
+    redirect_to rooms_path
   end
 
   def destroy

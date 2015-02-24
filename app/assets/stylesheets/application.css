@@ -16,40 +16,42 @@
 
 @import url(http://fonts.googleapis.com/css?family=Old+Standard+TT:400,700);
 
-
 body{
 	margin: 0 auto;
-	background-image: url("http://www.hdwallpapersnew.net/wp-content/uploads/2015/01/google-play-gradient-wide-hd-new-wallpapers-free-download.jpg");
-	background-repeat: no-repeat;
-	width: auto;
-	height: auto;
-	background-size: cover;
-  background-attachment: fixed;
-	font-family: 'Old Standard TT', serif;
+	background: url(http://www.hdwallpapersnew.net/wp-content/uploads/2015/01/google-play-gradient-wide-hd-new-wallpapers-free-download.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;	font-family: 'Old Standard TT', serif;
 }
 
 /* unvisited link */
 a:link{
-  color: rgba(0, 74, 235, 1);
+  color: rgba(0, 129, 235, 1);
   text-decoration: none;
 }
 
 /* visited link */
 a:visited{
-  color: rgba(0, 74, 235, 1);
+  color: rgba(0, 129, 235, 1);
   text-decoration: none;
 }
 
 /* mouse over link */
 a:hover{
-  color: rgba(0, 74, 235, 0.6);
+  color: rgba(0, 129, 235, 0.6);
   text-decoration: none;
 }
 
 /* selected link */
 a:active{
-  color: rgba(0, 74, 235, 0.6);
+  color: rgba(0, 129, 235, 0.6);
   text-decoration: none;
+}
+
+#line{
+	height: 1px;
+	background-color: white;
 }
 
 .main{
@@ -57,7 +59,7 @@ a:active{
 }
 
 #navBar{
-	background-color: #121212;
+	background-color: black;
 	padding: 15px;
 	font-size: 20px;
 	z-index: -1;

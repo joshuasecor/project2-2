@@ -1,0 +1,14 @@
+<div class='newRoom'>
+
+	<div class='mainHeader'>
+		Edit Post
+	</div><br>
+
+	<%= render "form" %>
+
+	<br><br>
+	<%= link_to 'Delete Post', @room, method: :delete, data: { confirm: 'Are you sure?' } %>
+	<br><br>
+	<%= link_to 'Cancel', room_path(@room) %>
+
+</div>

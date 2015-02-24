@@ -5,7 +5,7 @@
 			<%= link_to 'Back', rooms_path %>
 		</div>
 		<div class='deleteLink'>
-			<%= link_to 'Delete Post', @room, method: :delete, data: { confirm: 'Are you sure?' } %>
+			<%= link_to 'Edit Post', edit_room_path(@room)%>
 		</div>
 	</div>
 	<hr>
@@ -29,7 +29,7 @@
 	<% if current_user != nil %>
 		<%= link_to "Add Comment", new_room_comment_path(@room) %>
 	<% else %>
-		<%= link_to "Login to Add Comment", new_session_path %>
+		<%= link_to "Login To Add Comment", new_session_path %>
 	<% end %>
 	<hr>
 	<% @room.comments.order('created_at DESC').each do |c| %>
@@ -41,7 +41,6 @@
 			<%= link_to(c.user.username, user_path(c.user)) %>: 
 			<%= c.comment_text %>
 		</div>
-		<br>
 	</div>
 	<% end %>
 </div>
