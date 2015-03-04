@@ -42,12 +42,24 @@ hr {
 }
 
 #sideBar{
-
+	width: 150px;
+	text-align: center;
+	background: linear-gradient(white, #b5d4e3);
+	margin-left: 50px;
+	position: fixed;
+	padding: 15px;
+	border: solid black 1px;
+	border-radius: 8px;
+  display: inline-block;
+  overflow: hidden;
+  float: left;
+  -webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
 }
 
 #allRooms{
-	width: 90%;
-	max-width: 700px;
+	width: 400px;
   overflow: normal;
   margin: 0 auto;
   text-align: center;

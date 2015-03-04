@@ -1,7 +1,7 @@
 class RoomsController < ApplicationController
-
+#
   def index
-    @rooms = Room.all.reverse
+    @rooms = Room.all.reverse #
   end
 
   def new
